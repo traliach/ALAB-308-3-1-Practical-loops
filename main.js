@@ -67,20 +67,20 @@ let cell4 = "";
 let commas = 0;
 
 for (let i = 0; i < str.length; i++) {
-  let current = str[i];
+  let current = str[i]; // current character
 
   if (current === ",") {
-    commas++;
+    commas++; // increment the comma count
   } else if (current === "\n") {
     console.log(cell1, cell2, cell3, cell4);
-    commas = 0;
-    cell1 = "";
-    cell2 = "";
-    cell3 = "";
-    cell4 = "";
+    commas = 0; 
+    cell1 = ""; // reset the first cell and so on
+    cell2 = ""; 
+    cell3 = ""; 
+    cell4 = ""; 
   } else {
     if (commas === 0) {
-      cell1 += current;
+      cell1 += current; // add the current character to the first cell and so on
     } else if (commas === 1) {
       cell2 += current;
     } else if (commas === 2) {
@@ -90,7 +90,8 @@ for (let i = 0; i < str.length; i++) {
     }
   }
 
-  if (i === str.length - 1) {
-    console.log(cell1, cell2, cell3, cell4);
+  if (i === str.length - 1) { // if the current character is the last character in the string
+    console.log(cell1, cell2, cell3, cell4); // print the final row
   }
 }
+// Prints the CSV data in a table-like format with ID, Name, Occupation, and Age columns
