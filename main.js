@@ -32,8 +32,22 @@ let n = 4;
 let candidate = n + 1;
 
 while (true) {
-  console.log("Checking candidate:", candidate);
-  break; // temporary, just so we see one message for now
-}
-// print the checking candidate : 5
-
+    let isPrime = true;
+  
+    // try dividing candidate by all numbers from 2 to candidate - 1
+    for (let divisor = 2; divisor < candidate; divisor++) {
+      if (candidate % divisor === 0) {
+        isPrime = false;
+        break; // 
+      }
+    }
+  
+    if (isPrime) {
+      console.log("Next prime after", n, "is", candidate);
+      break; // 
+    }
+  
+    // not prime, try the next number
+    candidate++;
+  }
+// Prints Next prime after 4 is 5
