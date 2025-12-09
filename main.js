@@ -1,11 +1,11 @@
-// ======================
+// ---------------------------------------------------------
 // Part 1: Fizz Buzz
-// ======================
+// ---------------------------------------------------------
 
-// for (let i = 1; i <= 100; i++) 
-// {console.log(i);
-// }
-// // Prints the numbers 1 to 100
+for (let i = 1; i <= 100; i++) 
+{console.log(i);
+}
+// Prints the numbers 1 to 100
 
 // Fizz Buzz Game
 for (let i = 1; i <= 100; i++) {
@@ -21,4 +21,19 @@ for (let i = 1; i <= 100; i++) {
   }
   // Prints the numbers 1 to 100 with Fizz Buzz logic
 
-  // ======================
+// ---------------------------------------------------------
+// Part 2: Prime Time
+// ---------------------------------------------------------
+
+// starting number
+let n = 4;
+
+// candidate is the number just above n
+let candidate = n + 1;
+
+while (true) {
+  console.log("Checking candidate:", candidate);
+  break; // temporary, just so we see one message for now
+}
+// print the checking candidate : 5
+
